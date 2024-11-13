@@ -19,7 +19,7 @@ nav {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    margin: 10px;
+    margin: 30px;
 }
 
 .courses {
@@ -40,9 +40,77 @@ nav a:hover{
     color: #0589d2;
 }
 
-nav a.active{
+nav .link.active{
     background: #0589d2;
     border-radius: 5px;
     padding: 10px;
     border: none;
+    color: #ffffff;
+}
+
+.main{
+    color: #ffffff;
+}
+
+.statistics, .english, .physics-101, .computing, .physics-107, .software{
+    display: none;
+}
+
+/* .pdf{
+    background: #fff;
+    height: 70vh;
+    margin-left: 30vh;
+    width: 70vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pdf img{
+    width: 50%;
+    height: 100%;
+} */
+
+.pdf {
+    background: #fff;
+    height: 70vh;
+    margin-left: 30vh;
+    width: 70vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    flex-direction: row;
+    overflow: auto; 
+}
+
+.pdf img {
+    width: 50%;
+    height: 100%; 
+    /* border: 1px solid #040d2a;
+    border-radius: 10px; */
+}
+
+.text p {
+    color: #040d2a; 
+    padding-top: 20px; 
+    justify-content: space-between;
+    margin: 5px;
+    line-height: 1.6;
+}
+
+.text a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.text button{
+    padding: 10px 20px;
+    background: #040d2a;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
 }

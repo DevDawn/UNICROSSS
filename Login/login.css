@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #040d2a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginBox{
+    
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    border-radius: 15px;
+    /* top: 50%;
+    left: 50%; */
+}
+
+.login{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ffffff5d;
+    background-color: #040d2a;
+    /* filter: blur(5px); */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.login h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+.name{
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.name input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: none;
+}
+
+.name i{
+    cursor: pointer;
+    margin: 5px;
+    color: #ffffff;
+    
+}
+
+.email{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.email input{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.email i{
+    cursor: pointer;
+    margin: 5px;
+}
+
+.password{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.password input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: none;
+}
+
+.password i{
+    cursor: pointer;
+    margin: 5px;
+}
+
+.confirm-password{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.confirm-password input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: none;
+}
+
+.confirm-password i{
+    cursor: pointer;
+    margin: 5px;
+}
+
+.login button{
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.bottom{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.bottom a{
+    text-decoration: none;
+    color: #040d2a;
+}

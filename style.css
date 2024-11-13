@@ -10,13 +10,15 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vH;
+    height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     margin: 10px;
 }
@@ -28,7 +30,7 @@ nav {
 
 .links {
     display: flex;
-    gap: 15px; 
+    gap: 15px;
     margin: 10px;
     padding: 10px;
 }
@@ -40,36 +42,128 @@ nav a {
     padding: 10px;
 }
 
-nav a:hover{
-    text-decoration: underline;
+nav a:hover {
+    color: #ffffff;
 }
 
-.links .courses{
+.links .courses {
     background: #0589d2;
     color: white;
     border-radius: 5px;
 }
 
-.main{
+.links .courses:hover {
+    background: #ffffff;
+    color: #0589d2;
+    /* font-size: 10px; */
+}
+
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main h1{
+.main h1 {
     color: white;
     margin-top: 100px;
     font-size: 3rem;
 }
 
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 10px 30px;
+    border: none;
+    background: #040d2a;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.buttons button:hover {
+    background: #040d2aa6;
+    color: #ffffff;
+}
+
 .footer {
-    margin-top: auto; /* Pushes the footer to the bottom of the page */
-    background-color: #333; /* You can adjust the color */
-    color: white;  /* Footer text color */
-    text-align: center; /* Center the text */
-    padding: 10px 0; /* Some padding for spacing */
+    margin-top: auto;
+    background-color: #040d2a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
 
 footer {
-    font-size: 14px; /* Set the font size */
+    font-size: 14px;
+}
+
+.menu{
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    nav img{
+        margin: 20px;
+    }
+  nav .links{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    background-color: #ffffff;
+    margin-left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #040d2a;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  .links a{
+    color: #0589d2;
+  }
+  
+  .links a:hover{
+    color: #0589d2;
+  }
+
+  .menu{
+    display: flex;
+    align-items: center;
+  }
+
+  .menu i{
+    color: #ffffff;
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .buttons button{
+    padding: 10px 50px;
+  }
+
+  .links .courses:hover {
+    background: none;
+    color: #ffffff;
+    /* font-size: 10px; */
+}
+  
 }
